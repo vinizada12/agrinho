@@ -1,377 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa Agrinho - Conectando Campo e Cidade</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f8f2;
+    color:#333;
+}
+
+header{
+    background:#2e8b57;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#246b45;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(to right, #7cc576, #a8e063);
+}
+
+.hero h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+section{
+    padding:40px 10%;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#2e8b57;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
 </head>
 <body>
 
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <h2>Progama <span>Agrinho</span></h2>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#objetivos">Objetivos</a></li>
-                    <li><a href="#concurso">Concurso</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+    <h1>AGRINHO 2026</h1>
+    <p>Conectando o Campo e a Cidade</p>
+</header>
 
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Sustentabilidade, Cidadania e Educação</h1>
-            <p>Descubra como o Agrinho transforma a realidade de milhares de alunos e professores, unindo o conhecimento do campo às salas de aula.</p>
-            <a href="#sobre" class="btn">Saiba Mais</a>
-        </div>
-    </section>
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#importancia">Importância</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+</nav>
 
-    <section id="sobre" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Sobre o Agrinho</h2>
-            <div class="grid-2">
-                <div class="text-block">
-                    <p>O <strong>Agrinho</strong> é o principal programa de responsabilidade social do Sistema FAEP/SENAR-PR. Desenvolvido em parceria com o governo estadual e municípios, ele leva a pedagogia da pesquisa e da reflexão para as escolas.</p>
-                    <p>Com materiais didáticos próprios, o programa aborda temas transversais como ética, meio ambiente, saúde e orientação para o trabalho, incentivando o protagonismo infantojuvenil.</p>
-                </div>
-                <div class="highlight-box">
-                    <h3>Por que o Agrinho importa?</h3>
-                    <p>Ele estimula a criatividade, premia os melhores projetos e promove uma consciência crítica sobre a produção de alimentos e a preservação do nosso planeta.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="hero">
+    <h2>Construindo um Futuro Sustentável</h2>
+    <p>Educação, cidadania e respeito ao meio ambiente.</p>
+</div>
 
-    <section id="objetivos" class="bg-light section-padding">
-        <div class="container">
-            <h2 class="section-title">Nossos Pilares</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Cidadania</h3>
-                    <p>Formar cidadãos conscientes de seus direitos e deveres, capazes de transformar a comunidade onde vivem.</p>
-                </div>
-                <div class="card">
-                    <h3>Meio Ambiente</h3>
-                    <p>Incentivar práticas sustentáveis e o respeito à natureza, mostrando a força da agricultura consciente.</p>
-                </div>
-                <div class="card">
-                    <h3>Inovação</h3>
-                    <p>Estimular o uso da tecnologia e de metodologias ativas no aprendizado de alunos e professores.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="sobre">
+    <div class="card">
+        <h2>O que é o Agrinho?</h2>
+        <p>
+            O Agrinho é um programa educacional que promove a conscientização
+            sobre cidadania, sustentabilidade, meio ambiente, agricultura e
+            a relação entre o campo e a cidade.
+        </p>
+    </div>
+</section>
 
-    <section id="concurso" class="section-padding">
-        <div class="container text-center">
-            <h2 class="section-title">O Tradicional Concurso Agrinho</h2>
-            <p class="max-width-text">Todos os anos, o programa premia os melhores trabalhos em diversas categorias, como Desenho, Redação, Experiência Pedagógica e Escola Agrinho. É o reconhecimento do esforço de alunos e educadores!</p>
-            <div class="status-badge">Participe através da sua escola!</div>
-        </div>
-    </section>
+<section id="importancia">
+    <div class="card">
+        <h2>Importância do Campo</h2>
+        <p>
+            O campo produz alimentos, matérias-primas e recursos essenciais
+            para a vida. Valorizar o trabalho rural é reconhecer sua
+            contribuição para toda a sociedade.
+        </p>
+    </div>
+</section>
 
-    <section id="contato" class="bg-dark section-padding">
-        <div class="container">
-            <h2 class="section-title text-white">Contato & Informações</h2>
-            <p class="text-center text-white">Quer saber como levar o programa para a sua região ou tirar dúvidas?</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="email" placeholder="Seu E-mail" required>
-                <textarea placeholder="Sua Mensagem ou Dúvida" rows="5" required></textarea>
-                <button type="submit" class="btn btn-secondary">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+<section id="sustentabilidade">
+    <div class="card">
+        <h2>Sustentabilidade</h2>
+        <p>
+            A sustentabilidade busca equilibrar desenvolvimento econômico,
+            preservação ambiental e qualidade de vida para as futuras gerações.
+        </p>
+    </div>
+</section>
 
-    <footer>
-        <div class="container text-center">
-            <p>&copy; 2026 Site Conceito do Programa Agrinho. Inspirado na iniciativa do Sistema FAEP/SENAR.</p>
-            
-        </div>
-    </footer>
-    
+<footer>
+    <p>Projeto Agrinho 2026 • Educação para um mundo melhor</p>
+</footer>
 
 </body>
 </html>
-
-/* Configurações Gerais e Resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root {
-    --primary-color: #2e7d32; /* Verde Agrinho */
-    --primary-light: #4caf50;
-    --secondary-color: #f57c00; /* Laranja de destaque */
-    --dark-color: #1b5e20;
-    --light-bg: #f4f9f4;
-    --text-color: #333;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.section-padding {
-    padding: 60px 0;
-}
-
-.bg-light {
-    background-color: var(--light-bg);
-}
-
-.bg-dark {
-    background-color: var(--dark-color);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-white {
-    color: #fff;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    position: relative;
-    color: var(--dark-color);
-}
-
-.section-title.text-white {
-    color: #fff;
-}
-
-/* Links e Botões */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.btn {
-    display: inline-block;
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #e65100;
-}
-
-.btn-secondary {
-    background-color: #fff;
-    color: var(--dark-color);
-}
-
-.btn-secondary:hover {
-    background-color: #e8f5e9;
-}
-
-/* Cabeçalho / Navegação */
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.logo h2 {
-    color: var(--primary-color);
-}
-
-.logo span {
-    color: var(--secondary-color);
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    font-weight: 600;
-    color: var(--text-color);
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: var(--primary-color);
-}
-
-/* Seção Hero */
-.hero {
-    background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(27, 94, 32, 0.8)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Grids e Layouts */
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    align-items: center;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-/* Blocos de Conteúdo e Cards */
-.highlight-box {
-    background-color: var(--light-bg);
-    border-left: 5px solid var(--primary-color);
-    padding: 30px;
-    border-radius: 4px;
-}
-
-.highlight-box h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.max-width-text {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    font-size: 1.1rem;
-}
-
-.status-badge {
-    display: inline-block;
-    background-color: var(--primary-light);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-}
-
-/* Formulário de Contato */
-.contact-form {
-    max-width: 600px;
-    margin: 30px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input, 
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 4px;
-    background-color: rgba(255,255,255,0.1);
-    color: #fff;
-}
-
-.contact-form input::placeholder, 
-.contact-form textarea::placeholder {
-    color: #e0e0e0;
-}
-
-.contact-form input:focus, 
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #fff;
-    background-color: rgba(255,255,255,0.2);
-}
-
-/* Rodapé */
-footer {
-    background-color: #111;
-    color: #777;
-    padding: 20px 0;
-    font-size: 0.9rem;
-}
-
-/* Responsividade Mobile */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-}
