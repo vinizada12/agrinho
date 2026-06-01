@@ -92,8 +92,286 @@
     <footer>
         <div class="container text-center">
             <p>&copy; 2026 Site Conceito do Programa Agrinho. Inspirado na iniciativa do Sistema FAEP/SENAR.</p>
+            
         </div>
     </footer>
+    
 
 </body>
 </html>
+
+/* Configurações Gerais e Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #2e7d32; /* Verde Agrinho */
+    --primary-light: #4caf50;
+    --secondary-color: #f57c00; /* Laranja de destaque */
+    --dark-color: #1b5e20;
+    --light-bg: #f4f9f4;
+    --text-color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+    color: var(--dark-color);
+}
+
+.section-title.text-white {
+    color: #fff;
+}
+
+/* Links e Botões */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e65100;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: var(--dark-color);
+}
+
+.btn-secondary:hover {
+    background-color: #e8f5e9;
+}
+
+/* Cabeçalho / Navegação */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h2 {
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-weight: 600;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(27, 94, 32, 0.8)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grids e Layouts */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Blocos de Conteúdo e Cards */
+.highlight-box {
+    background-color: var(--light-bg);
+    border-left: 5px solid var(--primary-color);
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.highlight-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.max-width-text {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color: #e0e0e0;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #fff;
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #777;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
